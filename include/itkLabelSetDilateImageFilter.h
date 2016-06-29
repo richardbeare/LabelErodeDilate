@@ -84,8 +84,7 @@ protected:
   void ThreadedGenerateData(const OutputImageRegionType & outputRegionForThread, ThreadIdType threadId) ITK_OVERRIDE;
 
 private:
-  LabelSetDilateImageFilter(const Self &); //purposely not implemented
-  void operator=(const Self &);            //purposely not implemented
+  ITK_DISALLOW_COPY_AND_ASSIGN(LabelSetDilateImageFilter);
 
   typedef typename Superclass::DistanceImageType DistanceImageType;
 };

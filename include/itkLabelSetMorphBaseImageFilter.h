@@ -144,8 +144,7 @@ protected:
   // support elliptical operations
   RealType m_BaseSigma;
 private:
-  LabelSetMorphBaseImageFilter(const Self &); //purposely not implemented
-  void operator=(const Self &);               //purposely not implemented
+  ITK_DISALLOW_COPY_AND_ASSIGN(LabelSetMorphBaseImageFilter);
 };
 } // end namespace itk
 

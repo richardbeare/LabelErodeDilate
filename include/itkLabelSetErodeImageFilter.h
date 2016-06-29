@@ -90,8 +90,7 @@ protected:
 
   // Override since the filter produces the entire dataset.
 private:
-  LabelSetErodeImageFilter(const Self &); //purposely not implemented
-  void operator=(const Self &);           //purposely not implemented
+  ITK_DISALLOW_COPY_AND_ASSIGN(LabelSetErodeImageFilter);
 
   typedef typename Superclass::DistanceImageType DistanceImageType;
 };
